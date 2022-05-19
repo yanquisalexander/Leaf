@@ -3,9 +3,13 @@
     <div class="site-header-wrap">
       <v-app-bar-nav-icon class="d-block d-sm-none"></v-app-bar-nav-icon>
       <div class="title">
-            <v-toolbar-title class="site-header--text-logo" style="cursor: pointer" @click="$router.push('/')"
-            >Kodular <span>Leaf</span></v-toolbar-title
-          >
+        <v-toolbar-title
+          class="site-header--text-logo"
+          style="cursor: pointer"
+          @click="$router.push('/')"
+          >Kodular <span>Leaf</span
+          ><v-icon right>mdi-leaf</v-icon></v-toolbar-title
+        >
       </div>
 
       <div class="site-navigation--nav hidden-sm-and-down" role="navigation">
@@ -14,9 +18,7 @@
         >
       </div>
       <v-spacer></v-spacer>
-      <div class="header-user-panel--nav">
-
-      </div>
+      <div class="header-user-panel--nav"></div>
     </div>
   </v-app-bar>
 </template>

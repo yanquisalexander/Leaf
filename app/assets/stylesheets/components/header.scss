@@ -12,11 +12,12 @@
     font-family: "Jost";
     text-decoration: none !important;
     font-weight: 500;
-    color: #222;
-    font-size: 1.3rem
+    color: #444;
+    font-size: 1.3rem;
   
     & span {
       font-weight: 600;
+      color: var(--leaf-primary)
     }
   }
   
