@@ -5,13 +5,12 @@
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-import App from './app.vue'
+import App from './application.vue'
+import router from './routes/leaf-router'
 import $ from 'jquery'
 
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
-import "channels"
-
 Vue.use(Vuetify)
 
 
@@ -38,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const app = new Vue({
         el: '#leaf',
         vuetify: new Vuetify(),
+        router,
         render: h => h(App)
     }).$mount()
     document.body.appendChild(app.$el)
