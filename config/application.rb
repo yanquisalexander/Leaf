@@ -18,5 +18,10 @@ module Leaf
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    require_dependency 'lib/leaf'
+
+    config.autoloader = :zeitwerk
+    config.autoload_paths += Dir[ Rails.root.join('lib') ]
   end
 end
