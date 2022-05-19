@@ -3,19 +3,41 @@
     <div class="site-header-wrap">
       <v-app-bar-nav-icon class="d-block d-sm-none"></v-app-bar-nav-icon>
       <div class="title">
-        <v-toolbar-title
+        <router-link
           class="site-header--text-logo"
           style="cursor: pointer"
-          @click="$router.push('/')"
+          to="/"
           >Kodular <span>Leaf</span
-          ><v-icon right>mdi-leaf</v-icon></v-toolbar-title
+          ><v-icon right class="site-header--icon">mdi-leaf</v-icon></router-link
         >
       </div>
 
       <div class="site-navigation--nav hidden-sm-and-down" role="navigation">
-        <v-btn text class="site-nav--btn" to="/">
-          <v-icon left>mdi-</v-icon></v-btn
+        <v-btn text class="site-nav--btn" active-class="site-nav--btn-active" to="/">
+          <v-icon left>mdi-monitor-dashboard</v-icon>
+          Dashboard
+          </v-btn
         >
+
+        <v-btn text class="site-nav--btn" active-class="site-nav--btn-active" to="/database">
+          <v-icon left>mdi-server</v-icon>
+          Database
+          </v-btn
+        >
+
+        <v-btn text class="site-nav--btn" active-class="site-nav--btn-active" to="/storage">
+          <v-icon left>mdi-folder-outline</v-icon>
+          Storage
+          </v-btn
+        >
+
+        <v-btn text class="site-nav--btn" active-class="site-nav--btn-active" to="/users">
+          <v-icon left>mdi-account-group-outline</v-icon>
+          Users
+          </v-btn
+        >
+
+
       </div>
       <v-spacer></v-spacer>
       <div class="header-user-panel--nav"></div>
