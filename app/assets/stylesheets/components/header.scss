@@ -12,12 +12,17 @@
     font-family: "Jost";
     text-decoration: none !important;
     font-weight: 500;
-    color: #444;
+    color: #444 !important;
     font-size: 1.3rem;
   
     & span {
       font-weight: 600;
       color: var(--leaf-primary)
+    }
+
+    & i {
+        margin-top: -0.3rem;
+        color: var(--leaf-primary ) !important
     }
   }
   
@@ -38,3 +43,15 @@
     margin-left: 1.5rem;
   }
   
+  .site-nav--btn {
+    text-transform: none !important;
+    color: var(--leaf-theme-text-secondary) !important;
+    font-family: 'Jost';
+    font-weight: 500 !important;
+    margin: 0 4px;
+}
+
+.site-nav--btn-active {
+    color: var(--leaf-primary) !important;
+    font-weight: 600 !important;
+}
