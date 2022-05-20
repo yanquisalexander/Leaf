@@ -7,7 +7,7 @@
           class="site-header--text-logo"
           style="cursor: pointer"
           to="/"
-          >Kodular <span>Leaf</span
+          >Kode <span>Leaf</span
           ><v-icon right class="site-header--icon">mdi-leaf</v-icon></router-link
         >
       </div>
