@@ -16,7 +16,7 @@ import SiteSpinner from './components/site-spinner'
 
 Vue.use(Vuetify)
 
-Vue.component('site-spinner', SiteSpinner)
+Vue.component('SiteSpinner', SiteSpinner)
 
 
 
