@@ -11,7 +11,13 @@ import $ from 'jquery'
 
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
+
+import SiteSpinner from './components/site-spinner'
+
 Vue.use(Vuetify)
+
+Vue.component('site-spinner', SiteSpinner)
+
 
 
 $.ajaxSetup({
