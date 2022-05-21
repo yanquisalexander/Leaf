@@ -7,8 +7,7 @@ Rails.application.routes.draw do
 
   get "manifest.webmanifest" => "metadata#webmanifest", as: :manifest
   get "manifest.json" => "metadata#webmanifest"
-  get "dashboard.json" => "dashboard#index"
-  get "dashboard/uptime.json" => "dashboard#uptime"
+  get "dashboard" => "dashboard#index"
 
   match '*path', to: 'leaf_web#app', via: :all
  
