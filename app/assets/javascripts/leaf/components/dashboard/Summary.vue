@@ -8,7 +8,7 @@
             <v-icon> mdi-apps-box </v-icon>
           </span>
           <p class="text">Application</p>
-          <div class="dashboard-card--item">
+          <div class="dashboard-card--item" v-ripple>
             <v-icon>mdi-cellphone-cog</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Remote configuration</p>
@@ -17,7 +17,7 @@
               </p>
             </div>
           </div>
-          <div class="dashboard-card--item">
+          <div class="dashboard-card--item" v-ripple>
             <v-icon>mdi-key-chain-variant</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Project settings</p>
@@ -34,7 +34,7 @@
             <v-icon> mdi-code-json </v-icon>
           </span>
           <p class="text">Templates</p>
-          <div class="dashboard-card--item">
+          <div class="dashboard-card--item" v-ripple>
             <v-icon>mdi-page-layout-header</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Manage templates</p>
@@ -43,7 +43,7 @@
               </p>
             </div>
           </div>
-          <div class="dashboard-card--item">
+          <div class="dashboard-card--item" v-ripple>
             <v-icon>mdi-store</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Template store</p>
@@ -60,7 +60,7 @@
             <v-icon> mdi-server-network </v-icon>
           </span>
           <p class="text">Kode Leaf</p>
-          <div class="dashboard-card--item">
+          <div class="dashboard-card--item" v-ripple>
             <v-icon>mdi-history</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Uptime</p>
@@ -69,7 +69,7 @@
               </p>
             </div>
           </div>
-          <div class="dashboard-card--item">
+          <div class="dashboard-card--item" v-ripple>
             <v-icon>mdi-information-outline</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Version</p>
