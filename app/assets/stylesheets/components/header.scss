@@ -5,6 +5,7 @@
       display: flex;
       align-items: center;
       height: 100%;
+      user-select: none;
     }
   }
   
@@ -45,13 +46,13 @@
   
   .site-nav--btn {
     text-transform: none !important;
-    color: var(--leaf-theme-text-secondary) !important;
-    font-family: 'Jost';
-    font-weight: 500 !important;
+    color: var(--leaf-nav-text-color) !important;
+    font-family: var(--leaf-theme-font);
+    font-weight: 400 !important;
+    font-size: var(--leaf-nav-font-size);
     margin: 0 4px;
 }
 
 .site-nav--btn-active {
     color: var(--leaf-primary) !important;
-    font-weight: 600 !important;
 }
