@@ -1,5 +1,5 @@
 class DashboardController < ApplicationController
-    layout false
+    layout 'leaf'
     require 'action_view'
     include ActionView::Helpers::DateHelper
 
@@ -8,12 +8,16 @@ class DashboardController < ApplicationController
     end
 
     def index
-        render json: {
-            dashboard: {
-                uptime: uptime,
-                leaf_version: Leaf::Application::Version::FULL,
-            }
-        },
-        content_type: 'application/json'
+    respond_to do |format| 
+            format.html
+            format.json {         
+                render json: {
+                dashboard: {
+                    uptime: uptime,
+                    leaf_version: Leaf::Application::Version::FULL,
+                }
+            },
+            content_type: 'application/json' }
+    end 
     end
 end
