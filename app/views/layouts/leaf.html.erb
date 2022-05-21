@@ -19,7 +19,9 @@
          </div>
       </noscript>
       <script type="text/javascript">
-         window.Leaf = {};
+         window.Leaf = {
+            mobile: <% if device == "mobile" %>true<% else %>false<% end %>,
+         };
       </script> 
    </body>
 </html>
