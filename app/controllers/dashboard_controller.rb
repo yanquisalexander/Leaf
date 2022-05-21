@@ -10,7 +10,8 @@ class DashboardController < ApplicationController
     def index
         render json: {
             dashboard: {
-                uptime: uptime
+                uptime: uptime,
+                leaf_version: Leaf::Application::Version::FULL,
             }
         },
         content_type: 'application/json'
