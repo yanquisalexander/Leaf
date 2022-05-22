@@ -4,7 +4,7 @@ class Leaf::UpdateCheckerController < ApplicationController
         render json: {
             current: Leaf::Application::Version::FULL,
             git: {
-                current_branch: nil,
+                current_branch: Leaf.git_branch,
                 current_hash: Leaf.git_version,
                 remote_hash: nil,
             } 
