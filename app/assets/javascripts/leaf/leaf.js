@@ -40,10 +40,14 @@ $.ajaxSetup({
             return true;
         }
         if (xhr.status === 404) {
-            // return window.location.href = '/404';
+            return window.LeafRouter.replace('/not-found');
         }
         
-        // return window.location.href = '/500';
+        if (xhr.status === 500) {
+            return window.LeafRouter.replace('/exception');
+
+        }
+        
     }
 })
 
