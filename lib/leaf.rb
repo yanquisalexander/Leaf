@@ -8,6 +8,13 @@ module Leaf
         end
       end
 
+      def self.git_branch
+        @git_branch ||= begin
+          git_cmd = 'git rev-parse --abbrev-ref HEAD'
+          self.try_git(git_cmd, 'unknown')
+        end
+      end
+
       def self.try_git(git_cmd, default_value)
         version_value = false
     
