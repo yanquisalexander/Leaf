@@ -16,10 +16,40 @@ class MetadataController < ApplicationController
       display: display,
       start_url: "/",
       background_color: "#FFF",
-      theme_color: "#4527a0",
+      theme_color: "#FFF",
+
       icons: [
-          #TODO
-      ]
+        {
+          src: ActionController::Base.helpers.image_path("default/manifest/icon-192x192.png"),
+          sizes: "192x192",
+          type: "image/png"
+        },
+        {
+          src: ActionController::Base.helpers.image_path("default/manifest/icon-256x256.png"),
+          sizes: "256x256",
+          type: "image/png"
+        },
+        {
+          src: ActionController::Base.helpers.image_path("default/manifest/icon-384x384.png"),
+          sizes: "384x384",
+          type: "image/png"
+        },
+        {
+          src: ActionController::Base.helpers.image_path("default/manifest/icon-512x512.png"),
+          sizes: "512x512",
+          type: "image/png"
+        }
+      ],
+      shortcuts: [
+        {
+          name: 'View database',
+          url: '/database'
+        },
+        {
+          name: 'Manage users',
+          url: '/users'
+        }
+      ],
     }
 
 
