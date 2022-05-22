@@ -1,0 +1,2 @@
+module Leaf::UpdateCheckerHelper
+end

@@ -69,7 +69,7 @@
               </p>
             </div>
           </div>
-          <div class="dashboard-card--item" v-ripple>
+          <div class="dashboard-card--item" v-ripple @click.stop="showUpdateChecker = true">
             <v-icon>mdi-information-outline</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Version</p>
@@ -81,11 +81,14 @@
         </v-col>
       </v-row>
     </div>
+    <update-checker v-model="showUpdateChecker"/>
   </div>
 </template>
 
 <script>
+import updateChecker from '../modals/update-checker.vue'
 export default {
+  components: { updateChecker },
     name: 'DashboardSummary',
     mounted() {
         this.fetchSummary()
@@ -106,6 +109,7 @@ export default {
     data() {
         return {
             DashboardSummary : null,
+            showUpdateChecker: false
         }
     }
 }

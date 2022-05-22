@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get "manifest.json" => "metadata#webmanifest"
   get "dashboard" => "dashboard#index"
 
+  get "/system/update_checker" => "leaf/update_checker#index"
+
   match '*path', to: 'leaf_web#app', via: :all
  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
