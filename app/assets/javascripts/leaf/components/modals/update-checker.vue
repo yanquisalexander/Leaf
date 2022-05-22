@@ -10,6 +10,11 @@
           {{updateChecker.current}}
         </span>
       </p>
+      <p class="text">Git Branch:&nbsp;
+        <span>
+          {{updateChecker.git.current_branch}}
+        </span>
+      </p>
       <p class="text">Git version:&nbsp;
         <span>
           <a :href="'https://github.com/kodular-community/Leaf/commits/' + updateChecker.git.current_hash" target="_blank">
