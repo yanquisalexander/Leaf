@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
  
+  devise_for :users
   get 'leaf_web/app'
   get 'leaf_spa/app'
   # The "root" route, and any other no-defined url, will be handled by the SPA
