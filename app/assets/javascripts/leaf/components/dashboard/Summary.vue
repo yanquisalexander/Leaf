@@ -8,24 +8,30 @@
             <v-icon> mdi-apps-box </v-icon>
           </span>
           <p class="text">Application</p>
-          <div class="dashboard-card--item" v-ripple>
-            <v-icon>mdi-cellphone-cog</v-icon>
+          <router-link
+          to="/apps/remote-config"
+          tag="div"
+          class="dashboard-card--item"
+          v-ripple><v-icon>mdi-cellphone-cog</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Remote configuration</p>
               <p class="card-item-subtitle">
                 Change your global app settings remotely
               </p>
             </div>
-          </div>
-          <div class="dashboard-card--item" v-ripple>
-            <v-icon>mdi-key-chain-variant</v-icon>
+          </router-link>
+          <router-link
+          to="/apps/project-settings"
+          tag="div"
+          class="dashboard-card--item"
+          v-ripple><v-icon>mdi-key-chain-variant</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Project settings</p>
               <p class="card-item-subtitle">
                 Server-side settings (eg OAuth Credentials)
               </p>
             </div>
-          </div>
+          </router-link>
         </v-col>
 
 
@@ -34,7 +40,7 @@
             <v-icon> mdi-code-json </v-icon>
           </span>
           <p class="text">Templates</p>
-          <div class="dashboard-card--item" v-ripple>
+          <div class="dashboard-card--item" @click="window.Notifier.show({message: 'Not implemented', icon: '-', color: 'gray'})" v-ripple>
             <v-icon>mdi-page-layout-header</v-icon>
             <div class="inline-panel">
               <p class="card-item-title">Manage templates</p>
@@ -109,7 +115,8 @@ export default {
     data() {
         return {
             DashboardSummary : null,
-            showUpdateChecker: false
+            showUpdateChecker: false,
+            window: window
         }
     }
 }
