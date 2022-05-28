@@ -15,6 +15,7 @@ class DashboardController < ApplicationController
                 dashboard: {
                     uptime: uptime,
                     leaf_version: Leaf::Application::Version::FULL,
+                    # applicationId: params[:appId] # TO DO: Support for multi projects/apps in a single instance
                 }
             },
             content_type: 'application/json' }
