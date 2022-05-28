@@ -39,13 +39,18 @@
 
       </div>
       <v-spacer></v-spacer>
-      <div class="header-user-panel--nav"></div>
+      <div class="header-user-panel--nav">
+        <UserMenu />
+      </div>
     </div>
   </v-app-bar>
 </template>
 
 <script>
+import UserMenu from "./user-menu.vue";
+
 export default {
-  name: 'SiteHeaderComponent'
+  name: 'SiteHeaderComponent',
+  components: { UserMenu }
 }
 </script>
